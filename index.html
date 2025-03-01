@@ -21,14 +21,12 @@
 
         }
 
-        .disabled {
+       
 
-            pointer-events: none;
-            background-color: #B2BEB5;
-            color: #5A5A5A;
-        }
         .log {
-            background-color: red;
+            background-color: #F4F7FF;
+            padding: 10px;
+            border-radius: 5px;
         }
     </style>
 
@@ -74,7 +72,8 @@
 
                         </div>
                         <!-- part - 2 -->
-                        <div onclick="window.location.href='blog.html'" class=" rounded-lg  flex justify-start items-center gap-4 pl-10 bg-gradient-to-r from-[#3752FD]  to-[#9BA8F8]  w-[524px] h-[128px]">
+                        <div onclick="window.location.href='blog.html'"
+                            class=" rounded-lg  flex justify-start items-center gap-4 pl-10 bg-gradient-to-r from-[#3752FD]  to-[#9BA8F8]  w-[524px] h-[128px]">
                             <img class="w-[79px] h-[79px]" src="assets/board.png" alt="">
                             <h1 class="text-[24px] font-medium text-white ">Discover Something <br> New Today!</h1>
                         </div>
@@ -84,7 +83,8 @@
                                 <img class="w-[28px] h-[28px]" src="assets/calender.png" alt="">
                             </div>
                             <div>
-                                <h1>Wed , <br> Jul 28 2025 </h1>
+                                <h1> </h1>
+                                <h1></h1>
                             </div>
                         </div>
                     </div>
@@ -95,13 +95,13 @@
                     <div class="bg-white rounded-b-xl">
                         <div class="w-full grid grid-cols-3 gap-5 justify-items-center items-center px-6 pb-5 ">
                             <!-- card 1 -->
-                            <div class="bg-[#F4F7FF] w-[342px] h-[317px] p-5 rounded-lg">
+                            <div  class="bg-[#F4F7FF]  w-[342px] h-[317px] p-5 rounded-lg">
                                 <div
                                     class="bg-white rounded-lg w-[114px] h-[40px] mb-3 flex justify-center items-center">
                                     <h1> ShopEase</h1>
                                 </div>
 
-                                <h1 class="font-medium text-[24px] ">Fix Mobile Button Issue </h1>
+                                <h1 class="card-title font-medium text-[24px] ">Fix Mobile Button Issue </h1>
 
                                 <div class="bg-white rounded-lg w-[294px] h-[92px] p-3 mb-10 mt-3">
                                     <p class="text-[14px]">Debug using Chrome DevTools, check for overlapping elements,
@@ -113,20 +113,19 @@
                                         <h1 class="text-[14px] ">Deadline</h1>
                                         <h1 class="text-[16px] font-medium ">21 March 2025</h1>
                                     </div>
-                                    <div
-                                        class=" bg-blue-600 rounded-xl w-[135px] h-[44px]  flex justify-center items-center ">
-                                        <button onclick="showAlert()" class="text-white ">Completed</button>
+                                    <div class="card  flex justify-center items-center ">
+                                        <button class="text-white bg-blue-600  rounded-xl w-[135px] h-[44px] ">Completed</button>
                                     </div>
                                 </div>
                             </div>
                             <!-- card 2 -->
-                            <div class="bg-[#F4F7FF] w-[342px] h-[317px] p-5 rounded-lg">
+                            <div class="bg-[#F4F7FF]  w-[342px] h-[317px] p-5 rounded-lg">
                                 <div
                                     class="bg-white rounded-lg w-[114px] h-[40px] mb-3 flex justify-center items-center">
                                     <h1> CloudSync</h1>
                                 </div>
 
-                                <h1 class="font-medium text-[24px] ">Add Dark Mode </h1>
+                                <h1 class="card-title font-medium text-[24px] ">Add Dark Mode </h1>
 
                                 <div class="bg-white rounded-lg w-[294px] h-[92px] p-3 mb-10 mt-3">
                                     <p class="text-[14px]">Store the user's preference in localStorage, update CSS
@@ -138,20 +137,19 @@
                                         <h1 class="text-[14px] ">Deadline</h1>
                                         <h1 class="text-[16px] font-medium ">21 March 2025</h1>
                                     </div>
-                                    <div
-                                        class=" bg-blue-600 rounded-xl w-[135px] h-[44px]  flex justify-center items-center ">
-                                        <button onclick="showAlert()" class="text-white ">Completed</button>
+                                    <div class="card  flex justify-center items-center ">
+                                        <button class="text-white bg-blue-600  rounded-xl w-[135px] h-[44px] ">Completed</button>
                                     </div>
                                 </div>
                             </div>
                             <!-- card 3 -->
-                            <div class="bg-[#F4F7FF] w-[342px] h-[317px] p-5 rounded-lg">
+                            <div class="bg-[#F4F7FF]  w-[342px] h-[317px] p-5 rounded-lg">
                                 <div
                                     class="bg-white rounded-lg w-[114px] h-[40px] mb-3 flex justify-center items-center">
                                     <h1> SwiftPay</h1>
                                 </div>
 
-                                <h1 class="font-medium text-[24px] ">Optimize Home page </h1>
+                                <h1 class="card-title font-medium text-[24px] ">Optimize Home page </h1>
 
                                 <div class="bg-white rounded-lg w-[294px] h-[92px] p-3 mb-10 mt-3">
                                     <p class="text-[14px]">Debug using Chrome DevTools, check for overlapping elements,
@@ -163,20 +161,19 @@
                                         <h1 class="text-[14px] ">Deadline</h1>
                                         <h1 class="text-[16px] font-medium ">21 March 2025</h1>
                                     </div>
-                                    <div
-                                        class=" bg-blue-600 rounded-xl w-[135px] h-[44px]  flex justify-center items-center ">
-                                        <button onclick="showAlert()" class="text-white ">Completed</button>
+                                    <div class="card  flex justify-center items-center ">
+                                        <button class="text-white bg-blue-600  rounded-xl w-[135px] h-[44px] ">Completed</button>
                                     </div>
                                 </div>
                             </div>
                             <!-- card 4 -->
-                            <div class="bg-[#F4F7FF] w-[342px] h-[317px] p-5 rounded-lg">
+                            <div class="bg-[#F4F7FF]  w-[342px] h-[317px] p-5 rounded-lg">
                                 <div
                                     class="bg-white rounded-lg w-[114px] h-[40px] mb-3 flex justify-center items-center">
                                     <h1> Meta</h1>
                                 </div>
 
-                                <h1 class="font-medium text-[24px] ">Add new emoji 🤲</h1>
+                                <h1 class="card-title font-medium text-[24px] ">Add new emoji 🤲</h1>
 
                                 <div class="bg-white rounded-lg w-[294px] h-[92px] p-3 mb-10 mt-3">
                                     <p class="text-[14px]">Debug using Chrome DevTools, check for overlapping elements,
@@ -189,20 +186,19 @@
                                         <h1 class="text-[14px] ">Deadline</h1>
                                         <h1 class="text-[16px] font-medium ">21 March 2025</h1>
                                     </div>
-                                    <div
-                                        class=" bg-blue-600 rounded-xl w-[135px] h-[44px]  flex justify-center items-center ">
-                                        <button onclick="showAlert()" class="text-white ">Completed</button>
+                                    <div class="card  flex justify-center items-center ">
+                                        <button class="text-white bg-blue-600  rounded-xl w-[135px] h-[44px] ">Completed</button>
                                     </div>
                                 </div>
                             </div>
                             <!-- card 5 -->
-                            <div class="bg-[#F4F7FF] w-[342px] h-[317px] p-5 rounded-lg">
+                            <div class="bg-[#F4F7FF]  w-[342px] h-[317px] p-5 rounded-lg">
                                 <div
                                     class="bg-white rounded-lg w-[114px] h-[40px] mb-3 flex justify-center items-center">
                                     <h1> Google LLC</h1>
                                 </div>
 
-                                <h1 class="font-medium text-[24px] ">Integrate OpenAI API </h1>
+                                <h1 class="card-title font-medium text-[24px] ">Integrate OpenAI API </h1>
 
                                 <div class="bg-white rounded-lg w-[294px] h-[92px] p-3 mb-10 mt-3">
                                     <p class="text-[14px]">Debug using Chrome DevTools, check for overlapping elements,
@@ -214,20 +210,19 @@
                                         <h1 class="text-[14px] ">Deadline</h1>
                                         <h1 class="text-[16px] font-medium ">21 March 2025</h1>
                                     </div>
-                                    <div
-                                        class=" bg-blue-600 rounded-xl w-[135px] h-[44px]  flex justify-center items-center ">
-                                        <button onclick="showAlert()" class="text-white ">Completed</button>
+                                    <div class="card  flex justify-center items-center ">
+                                        <button class="text-white bg-blue-600  rounded-xl w-[135px] h-[44px] ">Completed</button>
                                     </div>
                                 </div>
                             </div>
                             <!-- card 6 -->
-                            <div class="bg-[#F4F7FF] w-[342px] h-[317px] p-5 rounded-lg">
+                            <div class="card-container bg-[#F4F7FF]  w-[342px] h-[317px] p-5 rounded-lg">
                                 <div
                                     class="bg-white rounded-lg w-[114px] h-[40px] mb-3 flex justify-center items-center">
                                     <h1> Glassdoar</h1>
                                 </div>
 
-                                <h1 id="card-title" class="font-medium text-[24px] ">Improve Job searching </h1>
+                                <h1 id="card-title" class="card-title font-medium text-[24px] ">Improve Job searching </h1>
 
                                 <div class="bg-white rounded-lg w-[294px] h-[92px] p-3 mb-10 mt-3">
                                     <p class="text-[14px]">Debug using Chrome DevTools, check for overlapping elements,
@@ -239,8 +234,8 @@
                                         <h1 class="text-[14px] ">Deadline</h1>
                                         <h1 class="text-[16px] font-medium ">21 March 2025</h1>
                                     </div>
-                                    <div class=" bg-blue-600 rounded-xl w-[135px] h-[44px]  flex justify-center items-center ">
-                                        <button id="complete-btn" onclick="showAlert()" class="text-white ">Completed</button>
+                                    <div class="card  flex justify-center items-center ">
+                                        <button class="text-white bg-blue-600  rounded-xl w-[135px] h-[44px] ">Completed</button>
                                     </div>
                                 </div>
                             </div>
@@ -251,22 +246,23 @@
 
                 <!-- right part -->
                 <div class="w-[400px] h-[856px] bg-white mt-4 rounded-xl flex flex-col items-center pt-10 gap-2">
-                    <div  class="w-[163px] h-[30px] flex justify-center items-center gap-2">
+                    <div class="w-[163px] h-[30px] flex justify-center items-center gap-2">
                         <div>
                             <img src="assets/activity.png" alt="">
                         </div>
-                        <div >
+                        <div>
                             <h1 class="text-[20px] font-medium">Activity Log</h1>
-                        </div>                    
+                        </div>
                     </div>
-                    <div class=" bg-blue-600 rounded-xl w-[150px] h-[44px]  flex justify-center items-center ">
-                        <button id="clear-history" class="text-white ">Clear History</button>
+                    <div class="flex justify-center items-center ">
+                        <button id="clear-history" class="text-white bg-blue-600 rounded-xl w-[150px] h-[44px] ">Clear
+                            History</button>
                     </div>
                     <div>
                         <hr>
                     </div>
-                    <div id="log-container" class="flex flex-col justify-items-center items-center gap-4">
-
+                    <div id="log-container" class=" px-5 py-5 flex flex-col justify-items-center items-center gap-4">
+                        
                     </div>
 
 

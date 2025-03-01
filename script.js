@@ -4,42 +4,48 @@ function clickChangeBg() {
     let rgbValue = "#" + randomColor;
     document.body.style.backgroundColor = rgbValue;
 }
-function showAlert() {
-    alert("Board Updated Successfully");
-
-    let addElement = document.getElementById("checkBox-count");
-    addElement.textContent = parseInt(addElement.textContent) + 1;
-
-    let subElement = document.getElementById("task-count");
-    subElement.textContent = parseInt(subElement.textContent) - 1;
-    let taskAssign = subElement.textContent;
-
-    let button = document.getElementById("complete-btn");
-    button.disabled = true;
-    button.classList.add("disabled");
-    button.style.background = "gray";
-
-    const now = new Date();
-    const dateTimeString = now.toLocaleString();
-
-    const logEntry = document.createElement('p');
-    logEntry.classList.add("log")
-    logEntry.textContent = `You have Complete "${card - title}" at ${dateTimeString}`;
-
-    const activityLog = document.getElementById("log-container");
-    activityLog.appendChild(logEntry);
 
 
+const buttons = document.querySelectorAll('.card button')
+    buttons.forEach((button) => {
+        button.addEventListener('click', function () {
 
-    if (taskAssign === 0) {
-        alert('Congrates!!!1You have completed all the current task!')
-    }
+            if (button.disabled) return;
+            button.disabled = true;
+            button.style.backgroundColor = "gray";
+            button.style.cursor = "not-allowed";
+            alert("Board Updated Successfully");
 
 
-    const clearHistory = document.getElementById("clear-history") 
-    clearHistory.addEventListener('click', function(){
-        const logContainer = document.getElementById("log-container");
-        logContainer.innerHTML = "";
-    })
+            let addElement = document.getElementById("checkBox-count");
+            addElement.textContent = parseInt(addElement.textContent) + 1;
 
-}
+            let subElement = document.getElementById("task-count");
+            subElement.textContent = parseInt(subElement.textContent) - 1;
+            
+            let taskAssign = subElement.textContent;
+            if(taskAssign === 2)
+                {
+                   
+                        alert("Congrats!!!! You have completed all the current tasks!");
+                    
+                }
+
+
+            const taskTitle = button.closest(".card-container").querySelectorAll(".card-title").innerText;
+            const dateTimeString = new Date().toLocaleTimeString();
+        
+            const logEntry = document.createElement("p");
+            logEntry.classList.add("log");
+            logEntry.innerText = `You have Complete ${taskTitle} at ${dateTimeString}`;
+        
+            const activityLog = document.getElementById("log-container");
+            activityLog.appendChild(logEntry);
+
+            
+
+        });
+    });
+
+
+    
