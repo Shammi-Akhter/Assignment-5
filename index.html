@@ -20,11 +20,15 @@
             font-family: "Poppins", sans-serif;
 
         }
+
         .disabled {
-            
-            pointer-events: none; 
-            background-color: #B2BEB5 ; 
+
+            pointer-events: none;
+            background-color: #B2BEB5;
             color: #5A5A5A;
+        }
+        .log {
+            background-color: red;
         }
     </style>
 
@@ -39,12 +43,14 @@
                     <h1 class="text-[35.67px]">Dev <span class="font-bold ">Board</span> </h1>
                 </div>
                 <div class="flex justify-between items-center gap-4">
-                    <div class="flex justify-center items-center gap-2 bg-[#F4F7FF] border rounded-full w-[123px] h-[64px]">
+                    <div
+                        class="flex justify-center items-center gap-2 bg-[#F4F7FF] border rounded-full w-[123px] h-[64px]">
                         <img class="w-[32px] h-[32px]" src="assets/checkbox.png" alt="">
                         <h3 id="checkBox-count" class="text-[32px] font-bold">23</h3>
                     </div>
                     <div class="bg-[#F4F7FF]  p-1 rounded-full w-[64px] h-[64px] flex justify-center items-center">
-                        <img onclick="clickChangeBg()" class="w-[40px] h-[40px] cursor-pointer" src="assets/theme-btn.png" alt="">
+                        <img onclick="clickChangeBg()" class="w-[40px] h-[40px] cursor-pointer"
+                            src="assets/theme-btn.png" alt="">
                     </div>
                 </div>
             </nav>
@@ -68,8 +74,7 @@
 
                         </div>
                         <!-- part - 2 -->
-                        <div
-                            class=" rounded-lg  flex justify-start items-center gap-4 pl-10 bg-gradient-to-r from-[#3752FD]  to-[#9BA8F8]  w-[524px] h-[128px]">
+                        <div onclick="window.location.href='blog.html'" class=" rounded-lg  flex justify-start items-center gap-4 pl-10 bg-gradient-to-r from-[#3752FD]  to-[#9BA8F8]  w-[524px] h-[128px]">
                             <img class="w-[79px] h-[79px]" src="assets/board.png" alt="">
                             <h1 class="text-[24px] font-medium text-white ">Discover Something <br> New Today!</h1>
                         </div>
@@ -135,7 +140,7 @@
                                     </div>
                                     <div
                                         class=" bg-blue-600 rounded-xl w-[135px] h-[44px]  flex justify-center items-center ">
-                                        <button onclick="showAlert()"  class="text-white ">Completed</button>
+                                        <button onclick="showAlert()" class="text-white ">Completed</button>
                                     </div>
                                 </div>
                             </div>
@@ -160,7 +165,7 @@
                                     </div>
                                     <div
                                         class=" bg-blue-600 rounded-xl w-[135px] h-[44px]  flex justify-center items-center ">
-                                        <button onclick="showAlert()"  class="text-white ">Completed</button>
+                                        <button onclick="showAlert()" class="text-white ">Completed</button>
                                     </div>
                                 </div>
                             </div>
@@ -186,7 +191,7 @@
                                     </div>
                                     <div
                                         class=" bg-blue-600 rounded-xl w-[135px] h-[44px]  flex justify-center items-center ">
-                                        <button onclick="showAlert()"  class="text-white ">Completed</button>
+                                        <button onclick="showAlert()" class="text-white ">Completed</button>
                                     </div>
                                 </div>
                             </div>
@@ -211,7 +216,7 @@
                                     </div>
                                     <div
                                         class=" bg-blue-600 rounded-xl w-[135px] h-[44px]  flex justify-center items-center ">
-                                        <button onclick="showAlert()"  class="text-white ">Completed</button>
+                                        <button onclick="showAlert()" class="text-white ">Completed</button>
                                     </div>
                                 </div>
                             </div>
@@ -222,7 +227,7 @@
                                     <h1> Glassdoar</h1>
                                 </div>
 
-                                <h1 class="font-medium text-[24px] ">Improve Job searching </h1>
+                                <h1 id="card-title" class="font-medium text-[24px] ">Improve Job searching </h1>
 
                                 <div class="bg-white rounded-lg w-[294px] h-[92px] p-3 mb-10 mt-3">
                                     <p class="text-[14px]">Debug using Chrome DevTools, check for overlapping elements,
@@ -234,8 +239,7 @@
                                         <h1 class="text-[14px] ">Deadline</h1>
                                         <h1 class="text-[16px] font-medium ">21 March 2025</h1>
                                     </div>
-                                    <div
-                                        class=" bg-blue-600 rounded-xl w-[135px] h-[44px]  flex justify-center items-center ">
+                                    <div class=" bg-blue-600 rounded-xl w-[135px] h-[44px]  flex justify-center items-center ">
                                         <button id="complete-btn" onclick="showAlert()" class="text-white ">Completed</button>
                                     </div>
                                 </div>
@@ -247,24 +251,26 @@
 
                 <!-- right part -->
                 <div class="w-[400px] h-[856px] bg-white mt-4 rounded-xl flex flex-col items-center pt-10 gap-2">
-                    <div class="w-[163px] h-[30px] flex justify-center items-center gap-2">
+                    <div  class="w-[163px] h-[30px] flex justify-center items-center gap-2">
                         <div>
                             <img src="assets/activity.png" alt="">
                         </div>
-                        <div>
+                        <div >
                             <h1 class="text-[20px] font-medium">Activity Log</h1>
-                        </div>
+                        </div>                    
                     </div>
                     <div class=" bg-blue-600 rounded-xl w-[150px] h-[44px]  flex justify-center items-center ">
-                        <button class="text-white ">Clear History</button>
+                        <button id="clear-history" class="text-white ">Clear History</button>
                     </div>
-                   <div>
-                    <hr>
-                   </div>
-                    
+                    <div>
+                        <hr>
+                    </div>
+                    <div id="log-container" class="flex flex-col justify-items-center items-center gap-4">
+
+                    </div>
+
 
                 </div>
-
 
 
             </section>
