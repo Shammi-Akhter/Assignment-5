@@ -23,16 +23,15 @@ const buttons = document.querySelectorAll('.card button')
             let subElement = document.getElementById("task-count");
             subElement.textContent = parseInt(subElement.textContent) - 1;
             
-            let taskAssign = subElement.textContent;
-            if(taskAssign === 2)
-                {
-                   
+            let taskAssign = addElement.textContent;
+            if(taskAssign == 6)
+                {                   
                         alert("Congrats!!!! You have completed all the current tasks!");
                     
                 }
 
 
-            const taskTitle = button.closest(".card-container").querySelectorAll(".card-title").innerText;
+            const taskTitle = button.closest(".card").querySelectorAll(".card-title").innerText;
             const dateTimeString = new Date().toLocaleTimeString();
         
             const logEntry = document.createElement("p");
@@ -42,7 +41,11 @@ const buttons = document.querySelectorAll('.card button')
             const activityLog = document.getElementById("log-container");
             activityLog.appendChild(logEntry);
 
-            
+            const clearHistory = document.getElementById("clear-history").addEventListener("click", function(){
+                const logContainer = document.getElementById('log-container');
+                logContainer.innerHTML = '';
+
+            })
 
         });
     });
