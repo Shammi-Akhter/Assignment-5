@@ -21,12 +21,16 @@
 
         }
 
-       
+
 
         .log {
             background-color: #F4F7FF;
             padding: 10px;
             border-radius: 5px;
+        }
+
+        .hover-element:hover {
+            cursor: pointer;
         }
     </style>
 
@@ -73,7 +77,8 @@
                         </div>
                         <!-- part - 2 -->
                         <div onclick="window.location.href='blog.html'"
-                            class=" rounded-lg  flex justify-start items-center gap-4 pl-10 bg-gradient-to-r from-[#3752FD]  to-[#9BA8F8]  w-[524px] h-[128px]">
+                            class="hover-element rounded-lg  flex justify-start items-center gap-4 pl-10 bg-gradient-to-r from-[#3752FD]  to-[#9BA8F8]  w-[524px] h-[128px]">
+
                             <img class="w-[79px] h-[79px]" src="assets/board.png" alt="">
                             <h1 class="text-[24px] font-medium text-white ">Discover Something <br> New Today!</h1>
                         </div>
@@ -83,19 +88,19 @@
                                 <img class="w-[28px] h-[28px]" src="assets/calender.png" alt="">
                             </div>
                             <div>
-                                <h1> </h1>
-                                <h1></h1>
+                                <p id="current-day"></p>
+                                <p id="current-date"></p>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <hr>
+                        <hr class="border border-dashed">
                     </div>
                     <!-- left bottom part -->
                     <div class="bg-white rounded-b-xl">
                         <div class="w-full grid grid-cols-3 gap-5 justify-items-center items-center px-6 pb-5 ">
                             <!-- card 1 -->
-                            <div  class="bg-[#F4F7FF]  w-[342px] h-[317px] p-5 rounded-lg">
+                            <div class="bg-[#F4F7FF] card-div w-[342px] h-[317px] p-5 rounded-lg">
                                 <div
                                     class="bg-white rounded-lg w-[114px] h-[40px] mb-3 flex justify-center items-center">
                                     <h1> ShopEase</h1>
@@ -104,8 +109,7 @@
                                 <h1 class="card-title font-medium text-[24px] ">Fix Mobile Button Issue </h1>
 
                                 <div class="bg-white rounded-lg w-[294px] h-[92px] p-3 mb-10 mt-3">
-                                    <p class="text-[14px]">Debug using Chrome DevTools, check for overlapping elements,
-                                        ensure onClick works properly.
+                                    <p class="text-[14px]">To fix mobile button issues (like size or responsiveness), ensure the button uses responsive CSS properties.
                                     </p>
                                 </div>
                                 <div class="flex justify-between items-center gap-2">
@@ -114,12 +118,13 @@
                                         <h1 class="text-[16px] font-medium ">21 March 2025</h1>
                                     </div>
                                     <div class="card  flex justify-center items-center ">
-                                        <button class="text-white bg-blue-600  rounded-xl w-[135px] h-[44px] ">Completed</button>
+                                        <button
+                                            class="text-white bg-blue-600  rounded-xl w-[135px] h-[44px] ">Completed</button>
                                     </div>
                                 </div>
                             </div>
                             <!-- card 2 -->
-                            <div class="bg-[#F4F7FF]  w-[342px] h-[317px] p-5 rounded-lg">
+                            <div class="bg-[#F4F7FF] card-div w-[342px] h-[317px] p-5 rounded-lg">
                                 <div
                                     class="bg-white rounded-lg w-[114px] h-[40px] mb-3 flex justify-center items-center">
                                     <h1> CloudSync</h1>
@@ -128,8 +133,7 @@
                                 <h1 class="card-title font-medium text-[24px] ">Add Dark Mode </h1>
 
                                 <div class="bg-white rounded-lg w-[294px] h-[92px] p-3 mb-10 mt-3">
-                                    <p class="text-[14px]">Store the user's preference in localStorage, update CSS
-                                        variables dynamically
+                                    <p class="text-[14px]">To add dark mode, toggle a CSS class (e.g., .dark-mode) on the body element using JavaScript. 
                                     </p>
                                 </div>
                                 <div class="flex justify-between items-center gap-2">
@@ -138,12 +142,13 @@
                                         <h1 class="text-[16px] font-medium ">21 March 2025</h1>
                                     </div>
                                     <div class="card  flex justify-center items-center ">
-                                        <button class="text-white bg-blue-600  rounded-xl w-[135px] h-[44px] ">Completed</button>
+                                        <button
+                                            class="text-white bg-blue-600  rounded-xl w-[135px] h-[44px] ">Completed</button>
                                     </div>
                                 </div>
                             </div>
                             <!-- card 3 -->
-                            <div class="bg-[#F4F7FF]  w-[342px] h-[317px] p-5 rounded-lg">
+                            <div class="bg-[#F4F7FF] card-div w-[342px] h-[317px] p-5 rounded-lg">
                                 <div
                                     class="bg-white rounded-lg w-[114px] h-[40px] mb-3 flex justify-center items-center">
                                     <h1> SwiftPay</h1>
@@ -152,8 +157,7 @@
                                 <h1 class="card-title font-medium text-[24px] ">Optimize Home page </h1>
 
                                 <div class="bg-white rounded-lg w-[294px] h-[92px] p-3 mb-10 mt-3">
-                                    <p class="text-[14px]">Debug using Chrome DevTools, check for overlapping elements,
-                                        and ensure onClick works properly.
+                                    <p class="text-[14px]">"Streamline your user experience by optimizing your home page for quicker access and better navigation!"
                                     </p>
                                 </div>
                                 <div class="flex justify-between items-center gap-2">
@@ -162,12 +166,13 @@
                                         <h1 class="text-[16px] font-medium ">21 March 2025</h1>
                                     </div>
                                     <div class="card  flex justify-center items-center ">
-                                        <button class="text-white bg-blue-600  rounded-xl w-[135px] h-[44px] ">Completed</button>
+                                        <button
+                                            class="text-white bg-blue-600  rounded-xl w-[135px] h-[44px] ">Completed</button>
                                     </div>
                                 </div>
                             </div>
                             <!-- card 4 -->
-                            <div class="bg-[#F4F7FF]  w-[342px] h-[317px] p-5 rounded-lg">
+                            <div class="bg-[#F4F7FF] card-div w-[342px] h-[317px] p-5 rounded-lg">
                                 <div
                                     class="bg-white rounded-lg w-[114px] h-[40px] mb-3 flex justify-center items-center">
                                     <h1> Meta</h1>
@@ -176,9 +181,7 @@
                                 <h1 class="card-title font-medium text-[24px] ">Add new emoji 🤲</h1>
 
                                 <div class="bg-white rounded-lg w-[294px] h-[92px] p-3 mb-10 mt-3">
-                                    <p class="text-[14px]">Debug using Chrome DevTools, check for overlapping elements,
-                                        and ensure onClick works properly.
-
+                                    <p class="text-[14px]">"Bring a little more expression to your chats with a brand-new emoji!"
                                     </p>
                                 </div>
                                 <div class="flex justify-between items-center gap-2">
@@ -187,12 +190,13 @@
                                         <h1 class="text-[16px] font-medium ">21 March 2025</h1>
                                     </div>
                                     <div class="card  flex justify-center items-center ">
-                                        <button class="text-white bg-blue-600  rounded-xl w-[135px] h-[44px] ">Completed</button>
+                                        <button
+                                            class="text-white bg-blue-600  rounded-xl w-[135px] h-[44px] ">Completed</button>
                                     </div>
                                 </div>
                             </div>
                             <!-- card 5 -->
-                            <div class="bg-[#F4F7FF]  w-[342px] h-[317px] p-5 rounded-lg">
+                            <div class="bg-[#F4F7FF] card-div w-[342px] h-[317px] p-5 rounded-lg">
                                 <div
                                     class="bg-white rounded-lg w-[114px] h-[40px] mb-3 flex justify-center items-center">
                                     <h1> Google LLC</h1>
@@ -201,8 +205,7 @@
                                 <h1 class="card-title font-medium text-[24px] ">Integrate OpenAI API </h1>
 
                                 <div class="bg-white rounded-lg w-[294px] h-[92px] p-3 mb-10 mt-3">
-                                    <p class="text-[14px]">Debug using Chrome DevTools, check for overlapping elements,
-                                        and ensure onClick .
+                                    <p class="text-[14px]">"Unlock the power of AI by seamlessly integrating the OpenAI API into your projects!"
                                     </p>
                                 </div>
                                 <div class="flex justify-between items-center gap-2">
@@ -211,22 +214,22 @@
                                         <h1 class="text-[16px] font-medium ">21 March 2025</h1>
                                     </div>
                                     <div class="card  flex justify-center items-center ">
-                                        <button class="text-white bg-blue-600  rounded-xl w-[135px] h-[44px] ">Completed</button>
+                                        <button
+                                            class="text-white bg-blue-600  rounded-xl w-[135px] h-[44px] ">Completed</button>
                                     </div>
                                 </div>
                             </div>
                             <!-- card 6 -->
-                            <div class="card-container bg-[#F4F7FF]  w-[342px] h-[317px] p-5 rounded-lg">
+                            <div class="card-div bg-[#F4F7FF]  w-[342px] h-[317px] p-5 rounded-lg">
                                 <div
                                     class="bg-white rounded-lg w-[114px] h-[40px] mb-3 flex justify-center items-center">
                                     <h1> Glassdoar</h1>
                                 </div>
 
-                                <h1 id="card-title" class="card-title font-medium text-[24px] ">Improve Job searching </h1>
+                                <h1 class="card-title font-medium text-[24px] ">Improve Job searching </h1>
 
                                 <div class="bg-white rounded-lg w-[294px] h-[92px] p-3 mb-10 mt-3">
-                                    <p class="text-[14px]">Debug using Chrome DevTools, check for overlapping elements,
-                                        ensure onClick works properly.
+                                    <p class="text-[14px]">"Enhance your job search experience with smarter tools and personalized opportunities!"
                                     </p>
                                 </div>
                                 <div class="flex justify-between items-center gap-2">
@@ -235,7 +238,8 @@
                                         <h1 class="text-[16px] font-medium ">21 March 2025</h1>
                                     </div>
                                     <div class="card  flex justify-center items-center ">
-                                        <button class="text-white bg-blue-600  rounded-xl w-[135px] h-[44px] ">Completed</button>
+                                        <button
+                                            class="text-white bg-blue-600  rounded-xl w-[135px] h-[44px] ">Completed</button>
                                     </div>
                                 </div>
                             </div>
@@ -258,11 +262,12 @@
                         <button id="clear-history" class="text-white bg-blue-600 rounded-xl w-[150px] h-[44px] ">Clear
                             History</button>
                     </div>
-                    <div>
-                        <hr>
+                    <div class="w-full">
+                        <hr class="border border-dashed" />
+
                     </div>
                     <div id="log-container" class=" px-5 py-5 flex flex-col justify-items-center items-center gap-4">
-                        
+
                     </div>
 
 
